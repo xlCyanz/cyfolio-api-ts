@@ -1,7 +1,9 @@
-module.exports = ({ env }) => ({
+export default ({ env }) => ({
   proxy: true,
-  url: env("MY_RAILWAY_URL"),
+  host: env('HOST', '0.0.0.0'),
+  url: env("PUBLIC_URL", "http://localhost:1337"),
   app: {
-    keys: env.array("APP_KEYS"),
+    keys: env.array('APP_KEYS'),
   },
 });
+

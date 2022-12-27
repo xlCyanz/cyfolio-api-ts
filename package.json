@@ -9,7 +9,9 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/http-cache-semantics": "^4.0.1"
+  },
   "dependencies": {
     "@strapi/plugin-graphql": "^4.5.4",
     "@strapi/plugin-i18n": "4.5.4",
@@ -17,6 +19,7 @@
     "@strapi/provider-upload-cloudinary": "^4.5.4",
     "@strapi/strapi": "4.5.4",
     "better-sqlite3": "7.4.6",
+    "cross-env": "^7.0.3",
     "pg": "^8.8.0",
     "pg-connection-string": "^2.5.0",
     "slugify": "^1.6.5"
